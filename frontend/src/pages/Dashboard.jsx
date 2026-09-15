@@ -65,15 +65,15 @@ export default function Dashboard() {
       {/* Executive hero */}
       <section className="bq-fade">
         <div className="bq-hero bq-hero-grid rounded-[24px] p-6 lg:p-7 text-white shadow-xl shadow-slate-900/10">
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6 items-center">
+          <div className="relative z-20 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6 items-center">
             <div>
               <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.14em] text-cyan-300">
                 <span className="h-2 w-2 rounded-full bg-cyan-300 bq-live-dot" /> BranchIQ Intelligence Layer
               </div>
-              <h1 className="font-display text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight mt-3 max-w-3xl leading-[1.06]">
+              <h1 className="relative z-20 font-display text-white text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight mt-3 max-w-3xl leading-[1.06]">
                 Turn branch network data into <span className="text-cyan-300">strategic decisions.</span>
               </h1>
-              <p className="text-slate-300 text-sm lg:text-[15px] mt-4 max-w-2xl leading-relaxed">
+              <p className="relative z-20 text-slate-200 text-sm lg:text-[15px] mt-4 max-w-2xl leading-relaxed">
                 A consulting-grade command centre for branch expansion, network optimisation and market whitespace across India.
               </p>
               <div className="mt-5 flex flex-wrap items-center gap-3">
@@ -209,3 +209,5 @@ export default function Dashboard() {
     </div>
   );
 }
+
+

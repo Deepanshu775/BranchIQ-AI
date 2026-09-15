@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
+from dotenv import load_dotenv
+load_dotenv()
 import json
 import re
 import logging
@@ -241,3 +243,40 @@ app.add_middleware(
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
+
+
+
+/* BranchIQ visibility fix */
+.hero {
+  background: linear-gradient(135deg, #071426 0%, #103052 100%) !important;
+  color: #ffffff !important;
+}
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero p,
+.hero span,
+.hero div {
+  color: #ffffff !important;
+}
+
+.hero h1,
+.hero h2 {
+  font-weight: 800 !important;
+}
+
+.hero p {
+  color: #dbeafe !important;
+}
+
+.hero .text-cyan,
+.hero .highlight {
+  color: #27c3e8 !important;
+}
+
+.hero input,
+.hero select {
+  color: #102033 !important;
+  background: #ffffff !important;
+}
